@@ -104,7 +104,10 @@ friend_foods.append('ice cream')
 print(my_foods)
 print(friend_foods)
 
-
-print(friend_foods)
-
 print("Probando sincronización con GitHub")
+
+print("Estos son los tres primeros elementos de la lista:")
+print(my_foods[0:3])
+
+
+

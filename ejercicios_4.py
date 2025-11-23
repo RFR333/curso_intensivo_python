@@ -142,4 +142,4 @@ print("\nSe han acabado las berengenas y la ensalada")
 comidas =('entremeses','patatas', 'calabacines', 'acelgas', 'pollo')
 for comida in comidas:
     print(comida)
-    
+

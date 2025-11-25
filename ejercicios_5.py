@@ -186,4 +186,7 @@ for n in range(1, 10):
         print("3rd")
     else:
         print(F"{n}th")
+# Ejercicio 5-13. Lista invitados.
+invitados = ['juan', 'maria', 'kamil', 'sofia', 'luis']
+
 

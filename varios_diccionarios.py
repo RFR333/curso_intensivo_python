@@ -20,4 +20,18 @@ for alien in aliens[:5]:
     print(alien)
 print("Aliens creados")
 
+# muestra cuantos aliens se han creado.
+print(f"Total number of aliens: {len(aliens)}")
+
+for alien in aliens [:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['points'] = 10
+        alien['speed'] = 'medium'
+
+
+# Muestra los 5 primeros aliens.
+for alien in aliens[:5]:
+    print(alien)
+
 

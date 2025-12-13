@@ -196,3 +196,208 @@ for formato, cantidad_cliente in cliente.items():
             print("Volumen exacto! Trae las cintas.")
     else:
         print(f"No trabajamos ese formato: {formato.title()}")
+
+
+# Ejercicio 6-7. Personas.
+
+amigos = {
+
+    'persona_1': {
+        'nombre': 'pilar',
+        'apellido': 'serrano',
+        'edad': 39,
+        'ciudad': 'barcelona'
+        },
+
+    'persona_2': {
+        'nombre': 'rafael',
+        'apellido': 'fenoy',
+        'edad': 48,
+        'ciudad': 'barcelona'
+        },
+
+    'persona_3': {
+        'nombre': 'antonio',
+        'apellido': 'fernandez',
+        'edad': 40,
+        'ciudad': 'cadiz',
+        },
+    }
+
+for usuarios, datos in amigos.items():
+    print(f"\nusuarios: {usuarios}") 
+    datos_personales = f"{datos['nombre']} {datos['apellido']}"
+    edad = f"{datos['edad']}"
+    localidad = f"{datos['ciudad']}\t"
+
+    print(f"Datos: {datos_personales.title()}")
+    print(f"Edad: {edad}")
+    print(f"Ciudad: {localidad.capitalize()}")
+
+# Ejercicio 6-8.Mascotas.
+mascotas = {
+    'pájaro_1': {
+        'nombre': 'rapi',
+        'animal': 'pájaro',
+        'raza': 'pardillo',
+        'edad': 6,
+        'habilidad': 'canto,'
+    },
+    'pájaro_2': {
+        'nombre': 'python',
+        'animal': 'pájaro',
+        'raza': 'pardillo',
+        'edad': 1,
+        'habilidad': 'canto',
+    },
+    'perro': {
+        'nombre': 'toby',
+        'animal': 'perro',
+        'raza': 'mestizo',
+        'edad': 12,
+        'habilidad': 'dormir',
+    },
+    'gato': {
+        'nombre': 'blanquito',
+        'animal': 'gato',
+        'raza': 'mestizo',
+        'edad': '6 meses',
+        'habilidad': 'saltar',
+    },
+
+}
+
+for animales, datos in mascotas.items():
+    print(f"\nAnimales en la lista: {animales.capitalize()}")
+    datos_animal = f"Nombre del animal: {datos['nombre'].capitalize()}, Animal: {datos['animal'].capitalize()}"
+    caracteristicas_animal = f"Raza del animal: {datos['raza'].capitalize()}, Edad del animal: {datos['edad']}"
+    habilidad = f"Habilidad del animal: {datos['habilidad'].capitalize()}"
+    print(datos_animal)
+    print(caracteristicas_animal)
+    print(habilidad)
+
+
+# Ejercicio 6-9. Lugares favoritos.
+lugares_favoritos = {
+    'pilar': {
+        'lugar_1': 'rio de janeiro',
+        'lugar_2': 'parís',
+        'lugar_3': 'génova'
+    },
+    'rafa': {
+        'lugar_1': 'jamaica',
+        'lugar_2': 'brasíl',
+        'lugar_3': 'marruecos',
+    },
+    'manuel': {
+        'lugar_1': 'santo domingo', 
+        'lugar_2': 'luxenburgo',
+        'lugar_3': 'himalaya',
+    },
+
+}
+
+for personas, destinos in lugares_favoritos.items():
+    print(f"\nPersonas encuestada: \t{personas.capitalize()}")
+
+    lugar_destino = f"\nSu 1er destino favorito es: \t{destinos['lugar_1'].title()}"
+    print(lugar_destino)
+    
+    lugar_destino_1 = f"\nEl 2º sitio preferido es: \t{destinos['lugar_2'].title()}"
+    print(lugar_destino_1)
+
+    lugar_destino_2 = f"\nEl 3er lugar de destino preferido es: \t{destinos['lugar_3'].title()}"
+    print(lugar_destino_2)
+
+
+# Ejercicio 6-10. Números favoritos.
+numeros_favoritos = {
+    'pilar': [5, 7, 9],
+    'rafa': [8, 4, 3],
+    'juan': [12, 15, 7],
+    'maria': [16, 19, 5],
+}
+
+for persona, numeros in numeros_favoritos.items():
+    print(f"\nLos números favoritos de {persona.title()} son:")
+    for num in numeros:
+        print(f"  - {num}")
+
+
+# Ejercicio 6-11. Ciudades.
+ciudades = {
+    'barcelona': {
+        'país': 'españa',
+        'habitantes': 'casi 2 millones',
+        'curiosidad': 'arquitectura',
+    },
+    'madrid': {
+        'país': 'españa',
+        'habitantes': '3.5 millones',
+        'curiosidad': 'museos',
+    },
+    'parís': {
+        'país': 'francia',
+        'habitantes': '2 millones',
+        'curiosidad': 'vinos',
+    },
+
+
+
+}
+
+for ciudad, caracteristicas in ciudades.items():
+    print(f"Evaluación de ciudad: {ciudad.title()}")
+    pais_origen =f"Situado en: {caracteristicas['país'].title()}"
+    print(pais_origen)
+    num_habitantes = f"Habitantes:: {caracteristicas['habitantes']}\t"
+    print(num_habitantes)
+    curiosidades = f"Lo más curioso es: \t{caracteristicas['curiosidad'].capitalize()}\n"
+    print(curiosidades)
+
+
+# Ejercicio 6-12. Extensiones.
+
+ciudades = {
+    'barcelona': {
+        'país': 'españa',
+        'habitantes': 'casi 2 millones',
+        'curiosidad': 'arquitectura',
+    },
+    'madrid': {
+        'país': 'españa',
+        'habitantes': '3.5 millones',
+        'curiosidad': 'museos',
+    },
+    'parís': {
+        'país': 'francia',
+        'habitantes': '2 millones',
+        'curiosidad': 'vinos',
+    },
+
+    'roma': {
+        'país': 'italia',
+        'habitantes': '2.8 millones',
+        'curiosidad': 'coliseo',
+    },
+
+    'berlín': {
+        'país': 'alemania',
+        'habitantes': '3.6 millones',
+        'curiosidad': 'muro de berlin',
+    },
+
+
+}
+
+for ciudad, caracteristicas in ciudades.items():
+    print(f"Evaluación de ciudad: {ciudad.title()}")
+    pais_origen =f"Situado en: {caracteristicas['país'].title()}"
+    print(pais_origen)
+    num_habitantes = f"Habitantes:: {caracteristicas['habitantes']}\t"
+    print(num_habitantes)
+    curiosidades = f"Lo más curioso es: \t{caracteristicas['curiosidad'].capitalize()}\n"
+    print(curiosidades)
+
+
+
